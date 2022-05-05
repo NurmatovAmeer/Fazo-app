@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="css/uikit.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/sign-up.css">
+</head>
+<body>
+
+<!------- MAIN codes ------->
+<div class="container">
+<!--    decoration codes-->
+    <div class="cube"><p class="oswald">Join us and</p></div>
+    <div class="cubed"><p class="oswald">Enjoy with us</p></div>
+    <div class="row">
+        <div class="col-10 offset-1 mt-3">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="text-center">Comments</h3>
+                </div>
+                <div class="card-body">
+                    <input type="text" class="form-control" placeholder="name" id="student-name">
+                    <input type="text" class="form-control mt-3" placeholder="Surname" id="student-surname">
+                    <textarea id="student-comment" placeholder="type here comment" class="form-control mt-4"></textarea>
+                    <button type="button" class="btn btn-outline-dark ml-auto d-block mt-3" onclick="addProduct()"><p class="oswald">Add</p></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="row" id="result">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/uikit.js"></script>
+<script src="js/sign-up.js"></script>
+</body>
+</html>

@@ -1,0 +1,412 @@
+/****** Font styles *******/
+@font-face {
+font-family: "Oswald";
+  src: url("../assets/fonts/Oswald.ttf") format("truetype");
+}
+.oswald{
+  font-family: "Oswald",sans-serif ;
+}
+/******* Color styles ******/
+$color-yellow: #F1B301;
+$color-black: #000000;
+$color-orange: #E76A06;
+$color-green: #12b51e;
+
+/******* MAIN styles ********/
+
+body{
+  overflow-x: hidden;
+  // TOP styles
+  .top{
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    .navbar {
+      position: fixed;
+      z-index: 99;
+      width: 100%;
+      background: linear-gradient(to right, $color-black 70%, $color-yellow 30%);
+      .navbar-brand{
+        margin-left: 50px;
+        h2{
+          color: $color-yellow;
+        }
+      }
+      .navbar-nav{
+        margin-left: 250px;
+        margin-right: 450px;
+        .nav-item{
+          margin-left: 20px;
+          .nav-link{
+            color: $color-yellow;
+          }
+        }
+      }
+    }
+
+    .uk-background-fixed{
+      width: 100%;
+      .background-title{
+        margin-right: -400px;
+        transform: rotate(-30deg);
+        h1{
+          font-size: 60px;
+          color: $color-yellow;
+        }
+      }
+      .background-info{
+        width: 45%;
+        p{
+          margin-top: 200px;
+          width: 40%;
+          color: #FFFFFF;
+          margin-left: 900px;
+        }
+      }
+      .button-sign{
+        position: absolute;
+        background-color: #fff;
+        border: 1px solid black;
+        width: 27%;
+        height: 50px;
+        margin-left: 420px;
+        margin-top: 150px;
+        z-index: 1;
+        border-radius: 0px;
+        font-size: 25px;
+        color: black;
+      }
+      .borders{
+        background-color: $color-yellow;
+        border: 0px;
+        border-radius: 0px;
+        width: 400px;
+        height: 50px;
+        margin-left: 400px;
+        margin-top: 150px;
+      }
+    }
+  }
+  //BODY styles
+  //project presentation
+  .line{
+    margin-top: 30px;
+    height: 1px;
+    width: 100%;
+    color: black;
+    background-color: #000000;
+  }
+  .presentation{
+    .presentation-title{
+      h1{
+        margin-top: 30px;
+        margin-left: 35%;
+        color: black;
+        font-size: 70px;
+
+      }
+    }
+    .presentation-items{
+      width: 80%;
+      margin-left: 10%;
+      .owl-carousel{
+        margin-top: 50px;
+      }
+    }
+  }
+
+  //decoration cubes
+  .cube{
+    border: 1px solid black;
+    z-index: 1;
+    transform: rotate(30deg);
+    position: absolute;
+    top: 1000px;
+    left: -300px;
+    width: 600px;
+    height: 600px;
+    background-color: $color-yellow;
+    p{
+      font-size: 60px;
+      color: black;
+      margin-left: 200px;
+    }
+  }
+  .cubed{
+    //teachers
+    border: 1px solid black;
+    z-index: 1;
+    transform: rotate(30deg);
+    position: absolute;
+    top: 1200px;
+    left: -250px;
+    width: 600px;
+    height: 600px;
+    background-color: $color-yellow;
+    p{
+      font-size: 60px ;
+      color: black;
+      margin-left: 200px;
+    }
+  }
+  .cube-radius{
+    transform: rotate(20deg);
+    position: absolute;
+    border-bottom-left-radius: 400px;
+    border-top-left-radius: 2000px;
+    left: 1100px;
+    top: 2400px;
+    z-index: 0;
+    width: 600px;
+    height: 600px;
+    background-color: $color-yellow;
+    border: 1px solid black;
+  }
+
+  //TEACHERS styles
+  .teachers{
+    .teachers-title{
+      h1{
+        font-size: 70px ;
+        color: black;
+        margin-left: 35%;
+      }
+    }
+    .teachers-item{
+      // first teacher
+      .d-flex{
+        .malumot{
+          margin-top: 380px;
+          margin-left: 320px;
+        }
+        .teacher{
+          margin-top: 20px;
+          margin-left: 60px;
+          width: 600px;
+          height: 750px;
+        }
+        .attributes{
+          margin-left: 800px;
+          .lined{
+            margin-top: 5px;
+            width: 700px;
+            height: 0.5px;
+            color: black;
+            background-color: black;
+          }
+          .other-photos{
+            margin-top: 10px;
+            width: 700px;
+
+          }
+        }
+      }
+      //second teacher
+      .d-flex{
+        .teacher2{
+          margin-left: 100px;
+          width: 600px;
+          height: 750px;
+        }
+        .malumot2{
+          z-index: 10;
+          width: 500px;
+          margin-top: 350px;
+          margin-left: 60px;
+        }
+        .attributes2{
+          margin-left: 100px;
+          margin-top: 10px;
+          .lined{
+            margin-top: -5px;
+            margin-bottom: 10px;
+            width: 700px;
+            height: 0.5px;
+            color: black;
+            background-color: black;
+          }
+          .owl-carousel{
+            width: 700px;
+          }
+        }
+      }
+    }
+  }
+
+//  DIAGRAM styles
+ .diagram{
+   .diagram-title{
+     h1{
+       font-size:70px ;
+       color: black;
+       margin-left: 550px;
+       margin-top: 50px;
+     }
+   }
+   .diagram-comments{
+     margin-left: 150px;
+     margin-top: 50px;
+   }
+   #container{
+     margin-top: -250px;
+     margin-left: 700px;
+   }
+ }
+
+// FOOTER styles
+  .footer{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 100%;
+    background-color: $color-black;
+    height: 400px;
+    .data{
+      p{
+        color: $color-yellow;
+        margin-left: 50px;
+        margin-top: 150px;
+        font-size: 30px ;
+      }
+      .d-flex{
+        margin-left: 400px;
+        .flex-column{
+          margin-left: 100px;
+          .first-tag{
+            margin-top: 10px;
+          }
+          a{
+            margin-top: 20px;
+            font-size: 20px;
+            color: $color-yellow;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen  and (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+    // TOP styles
+    .top{
+      width: 100%;
+      .navbar{
+        width: 96.5%;
+        .navbar-nav{
+          margin-left: -1%;
+        }
+        .btn-outline-dark{
+          background-color: $color-yellow;
+        }
+      }
+
+      .uk-background-fixed{
+        .background-title{
+          margin-top: 50px;
+          font-size: 10px;
+          margin-left: -50px;
+        }
+        .background-info{
+          display: none;
+        }
+        .button-sign{
+          position: relative;
+          z-index: 100;
+          top: -600px;
+          width: 80%;
+          height: 50px;
+          margin-left: -20px;
+        }
+        .borders{
+          display: none;
+        }
+      }
+    }
+    //MAIN styles
+    // presentation styles
+    .line{
+      width: 90%;
+    }
+    .presentation{
+      .presentation-items{
+        margin-left: -1%;
+        width: 100%;
+        .card{
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+    //decoration styles
+    .cube{
+      display: none;
+    }
+    .cubed{
+      display: none;
+    }
+    .cube-radius{
+      display: none;
+    }
+  //  teachers styles
+    .teachers{
+      .teachers-item{
+        .d-flex{
+          .malumot{
+           display: none;
+          }
+          .teacher{
+           display: none;
+          }
+          .attributes {
+            .lined{
+              display: none;
+            }
+            .other-photos {
+              display: none;
+            }
+          }
+
+          .teacher2{
+            margin-left: 30px;
+            width: 90%;
+          }
+          .malumot2{
+            width: 90%;
+            margin-top: -5px;
+            margin-left: 30px;
+          }
+          .attributes2{
+            .lined{
+              display: none;
+            }
+            .other-photos{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  //  statistics styles
+    .diagram{
+      display: none;
+    }
+  //  footer styles
+    .footer{
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      width: 100%;
+      background-color: $color-black;
+      .data{
+        .d-flex{
+          margin-left: -0.33%;
+          .flex-column{
+            margin-left: 40px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+/****** Font styles *******/
+@font-face {
+  font-family: "Oswald";
+  src: url("../assets/fonts/Oswald.ttf") format("truetype");
+}
+.oswald{
+  font-family: "Oswald",sans-serif ;
+}
+/******* Color styles ******/
+$color-yellow: #F1B301;
+$color-black: #000000;
+$color-orange: #E76A06;
+$color-green: #12b51e;
+
+/******* MAIN styles ********/
+.container{
+  overflow-y: hidden;
+  //decoration styles
+  .cube{
+    position: absolute;
+    left: -300px;
+    top: 50px;
+    transform: rotate(30deg);
+    width: 600px;
+    height: 600px;
+    background-color: $color-yellow;
+    border: solid 1px black;
+    p{
+      font-size: 60px;
+      color: black;
+      margin-left: 200px;
+    }
+  }
+  .cubed{
+    position: absolute;
+    left: -300px;
+    top: 180px;
+    transform: rotate(30deg);
+    width: 600px;
+    height: 600px;
+    background-color: $color-yellow;
+    border: solid 1px black;
+    p{
+      font-size: 60px;
+      color: black;
+      margin-left: 200px;
+    }
+  }
+
+  .card{
+    border: 1px solid black;
+    .card-header{
+      background-color: $color-black;
+      h3{
+        color: $color-yellow;
+      }
+    }
+    .card-body{
+      background-color: $color-yellow;
+      textarea{
+        height: 100px;
+      }
+
+      .btn {
+        width: 80px;
+        height: 45px;
+        p{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
